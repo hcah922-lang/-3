@@ -1,0 +1,38 @@
+# Environment (секреты никогда не коммитим)
+.env
+.env.local
+
+# Database
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+data/*.db
+
+# Exports (генерируются ботом в data/)
+exports/
+data/export_*
+data/*.json
+
+# Logs
+*.log
+logs/
+
+# Virtual environment
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary
+tmp/
+temp/
+*.tmp

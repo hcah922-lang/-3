@@ -1,0 +1,17 @@
+[Unit]
+Description=Dating Bot (aiogram)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=sviatoslav.g15
+WorkingDirectory=/home/sviatoslav.g15/dating_bot
+ExecStart=/home/sviatoslav.g15/dating_bot/venv/bin/python /home/sviatoslav.g15/dating_bot/bot.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
