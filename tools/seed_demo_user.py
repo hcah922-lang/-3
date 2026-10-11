@@ -9,6 +9,10 @@
 """
 import asyncio
 import sys
+from pathlib import Path
+
+# чтобы скрипт работал из любой директории
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from config import config
 from database import Database

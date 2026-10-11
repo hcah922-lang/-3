@@ -1,5 +1,5 @@
 [Unit]
-Description=Dating Bot (aiogram)
+Description=Dating Bot (aiogram 3.x, SQLite)
 After=network-online.target
 Wants=network-online.target
 
